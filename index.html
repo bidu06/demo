@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Resume of Bidusha Shrestha — BSc Data Science and Statistics student.">
+<title>Bidusha Shrestha | Resume</title>
+<style>
+  :root {
+    --ink: #202a36;
+    --muted: #647184;
+    --accent: #245b73;
+    --accent-light: #eaf2f5;
+    --line: #dce3e8;
+    --paper: #ffffff;
+    --bg: #edf1f4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 36px 18px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .toolbar {
+    max-width: 900px;
+    margin: 0 auto 14px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .print-btn {
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 16px;
+    background: var(--accent);
+    color: white;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  .print-btn:hover { background: #19465a; }
+  .resume {
+    max-width: 900px;
+    margin: auto;
+    background: var(--paper);
+    box-shadow: 0 12px 38px rgba(30, 48, 62, .10);
+    display: grid;
+    grid-template-columns: 265px 1fr;
+    min-height: 1100px;
+  }
+  aside {
+    background: #f5f8fa;
+    padding: 42px 28px;
+    border-right: 1px solid var(--line);
+  }
+  main { padding: 42px 42px 48px; }
+  h1 {
+    margin: 0 0 7px;
+    font-size: 34px;
+    line-height: 1.12;
+    letter-spacing: -.8px;
+    color: #172b3a;
+  }
+  .headline {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.15px;
+    text-transform: uppercase;
+  }
+  .intro {
+    margin: 18px 0 27px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .section { margin-top: 29px; }
+  .section:first-child { margin-top: 0; }
+  h2 {
+    margin: 0 0 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent);
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 1.35px;
+    text-transform: uppercase;
+  }
+  h3 {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+  .entry { margin: 0 0 20px; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: baseline;
+  }
+  .date {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: right;
+  }
+  .role {
+    margin: 3px 0 8px;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 650;
+  }
+  ul {
+    margin: 7px 0 0;
+    padding-left: 18px;
+    color: #3f4c59;
+    font-size: 13px;
+  }
+  li { margin: 0 0 5px; padding-left: 2px; }
+  .school { margin-bottom: 17px; }
+  .school h3 { font-size: 14px; }
+  .school p, .small { margin: 3px 0 0; color: var(--muted); font-size: 12.5px; }
+  .contact-item { margin: 0 0 13px; overflow-wrap: anywhere; }
+  .contact-label {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .contact-value { font-size: 12.5px; }
+  .skill-list { list-style: none; padding: 0; margin: 0; }
+  .skill-list li {
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px solid var(--line);
+    font-size: 12.5px;
+  }
+  .language { margin-bottom: 9px; font-size: 12.5px; }
+  .language span { display: block; color: var(--muted); font-size: 11px; }
+  .muted-note { color: var(--muted); font-size: 12px; }
+  @media (max-width: 680px) {
+    body { padding: 12px 8px; }
+    .resume { grid-template-columns: 1fr; }
+    aside { border-right: 0; border-bottom: 1px solid var(--line); padding: 28px 25px; }
+    main { padding: 30px 25px; }
+    h1 { font-size: 30px; }
+    .entry-head { display: block; }
+    .date { text-align: left; margin-top: 3px; }
+  }
+  @media print {
+    @page { size: A4; margin: 10mm; }
+    body { padding: 0; background: white; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .toolbar { display: none; }
+    .resume { max-width: none; min-height: 0; box-shadow: none; }
+    aside { padding: 28px 20px; }
+    main { padding: 28px 27px; }
+    .section, .entry { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<div class="resume">
+  <aside>
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="contact-item">
+        <span class="contact-label">Email</span>
+        <div class="contact-value"><a href="mailto:bidusha06@gmail.com">bidusha06@gmail.com</a></div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Phone</span>
+        <div class="contact-value">+91 8904759628</div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Nationality</span>
+        <div class="contact-value">Nepali</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <ul class="skill-list">
+        <li>Microsoft Word</li>
+        <li>Microsoft Excel</li>
+        <li>Microsoft PowerPoint</li>
+        <li>Basic Python Programming</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Core Skills</h2>
+      <ul class="skill-list">
+        <li>Communication</li>
+        <li>Interpersonal skills</li>
+        <li>Time management</li>
+        <li>Teamwork</li>
+        <li>Administrative coordination</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Languages</h2>
+      <div class="language">English <span>General professional proficiency</span></div>
+      <div class="language">Nepali <span>General professional proficiency</span></div>
+      <div class="language">Newari <span>Basic native proficiency</span></div>
+      <div class="language">Hindi <span>Basic general proficiency</span></div>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <h1>Bidusha Shrestha</h1>
+      <div class="headline">Data Science &amp; Statistics Student</div>
+      <p class="intro">BSc student at CHRIST (Deemed to be University), Bengaluru, with experience in administration, customer service, academic tutoring, event coordination and community volunteering.</p>
+    </header>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="school">
+        <h3>CHRIST (Deemed to be University)</h3>
+        <p>Bengaluru, India · B.Sc. in Data Science and Statistics</p>
+        <p>July 2025 – Present</p>
+      </div>
+      <div class="school">
+        <h3>Rato Bangala School</h3>
+        <p>Lalitpur, Nepal · A Levels Graduate</p>
+        <p>July 2022 – June 2024</p>
+      </div>
+      <div class="school">
+        <h3>St. Mary’s Higher Secondary School</h3>
+        <p>Lalitpur, Nepal · SEE Graduate</p>
+        <p>April 2012 – May 2022</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Work Experience</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Nepal Art Council</h3>
+          <span class="date">February 2025 – May 2025</span>
+        </div>
+        <div class="role">Co-ordinator</div>
+        <ul>
+          <li>Managed official email correspondence and handled incoming and outgoing calls professionally.</li>
+          <li>Assisted the curator with day-to-day operations and exhibition coordination.</li>
+          <li>Oversaw printing and documentation tasks to support administrative functions.</li>
+          <li>Managed relationships with clients and artists, ensuring smooth communication and a positive experience.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Sanima Bank Ltd.</h3>
+          <span class="date">January 2023 · Two weeks</span>
+        </div>
+        <div class="role">Customer Service Intern</div>
+        <ul>
+          <li>Assisted customers with filling out forms and cheque writing.</li>
+          <li>Managed cheque books, ATM card distribution and record-keeping of new accounts.</li>
+          <li>Handled filing, paperwork, photocopying and document printing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Volunteer Experience</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Pingal Library</h3>
+          <span class="date">August 2022 – December 2022</span>
+        </div>
+        <div class="role">Academic Tutor and Organizer</div>
+        <ul>
+          <li>Mentored students in Grades 1–5 through one-to-one discussions to resolve doubts and support their academic development.</li>
+          <li>Organized books by language and genre, assisted with book data entry and helped maintain the library.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Oxsa Nepal Animal Welfare Society</h3>
+          <span class="date">July 2022 · Two weeks</span>
+        </div>
+        <div class="role">Animal Feeder</div>
+        <ul>
+          <li>Assisted in feeding street dogs in the UN Park area.</li>
+          <li>Regularly fed and cared for stray dogs in the local community.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Model United Nations Experience</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Rato Bangala School Model United Nations (RBS MUN)</h3>
+          <span class="date">15–17 December 2023</span>
+        </div>
+        <div class="role">Moderator</div>
+        <ul>
+          <li>Led a 14-member debate, enforced procedural rules and conducted training sessions to help new delegates develop their debating skills.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Rato Bangala School Model United Nations (RBS MUN)</h3>
+          <span class="date">9–11 December 2022</span>
+        </div>
+        <div class="role">Attendee</div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
